@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Trajan";
+    src: url(TrajanPro-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "District Thin";
+    src: url(DistProTh.otf) format("truetype");
+}
+
+
+header{
+    font-family: Trajan, helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Trajan, helvetica, sans-serif;
+}
+
+header#top{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+span.top_head{
+    font-size: 40pt;
+    margin-bottom: 500px;
+}
+
+span.top_caption{
+    font-style: italic;
+}
+
+body{
+    width: 90%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FCFCFC;
+}
+
+section{
+    font-family: "District Thin", Georgia, serif;
+}
+
+nav#nav_bar{
+    width: 100%;
+    background-color: #333333;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    color: #ffffff;
+
+    font-family: "Lucida Console", "courier new", courier, monospace;
+    text-align: center;
+}
+
+nav#nav_bar a{
+    color: #ffffff;
+}
+
+nav#nav_bar a:hover{
+    color: #dcdcdc;
+}
+
+nav#nav_bar a:visited{
+    color: #989898;
+}
+
+nav#gadgets{
+    font-family: "Lucida Console", "courier new", courier, monospace;
+}
+nav#gadgets ul{
+    list-style-image: url('img/bullet.png');
+}
+
+nav#gadgets ul.l1{
+    font-size: 13pt;
+}
+
+nav#gadgets ul.l2{
+    font-size: 11pt;
+}
+
+nav#gadgets ul.l3{
+    font-size: 9pt;
+}
+
+
+
+
+div#gadget_container{
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div#gadget_navbox{
+    width: 40%;
+    max-width: 220px;
+    min-width: 150px;
+    float: left;
+    margin-top: 20px;
+}
+
+div#gadget_separator{
+    width: 2px;
+    background-color: #606060;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    height: 340px;
+    float: left;
+}
+
+div#gadget_content{
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+div#gadget_content img{
+    width: 62%;
+    border-radius: 15px;
+    border: outset thick;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+div#gadget_shopper{
+    width: 100%;
+    margin-top: 35px;
+
+}
+
+div#gadget_shopper button{
+    background-color: #ff952c;
+    font-family: Trajan, helvetica, sans-serif;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.float_right{
+    float:right;
+}
+
+section#container{
+    width: 75%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#content{
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+a:link {
+        text-decoration: none;
+}
