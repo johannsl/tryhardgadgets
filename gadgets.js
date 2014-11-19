@@ -33,16 +33,11 @@ var fillGadget=function(gadget){
 
     for(i=0;i< g.length;i++){
         if(gadget.innerHTML==g[i].children[0].innerHTML){
-            gTitle.value=g[i].children[0].innerHTML;
-            gDescr.value=g[i].children[1].innerHTML;
-            gPrice.value="Price: &pound;"+g[i].children[2].innerHTML+"<br><button value='Add to cart'>Add to cart</button>"
+            gTitle.innerHTML="<h3>"+g[i].children[0].innerHTML+"</h3>";
+            gDescr.innerHTML=g[i].children[1].innerHTML;
+            gPrice.innerHTML="Price: &pound;"+g[i].children[2].innerHTML+"<br><button value='Add to cart'>Add to cart</button>"
         }
     }
-
-    /*
-     Price: &pound;74.999,90<br>
-     <button value="Add to cart">Add to cart</button>
-     */
 };
 
 var printGadgets=function(e){
