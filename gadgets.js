@@ -34,19 +34,30 @@ var fillGadget=function(gadget){
     for(i=0;i< g.length;i++){
         if(gadget.innerHTML==g[i].children[0].innerHTML){
             gTitle.innerHTML="<h3>"+g[i].children[0].innerHTML+"</h3>";
-            gDescr.innerHTML=g[i].children[1].innerHTML;
+            gDescr.innerHTML="";
+            if(g[i].children[3].innerHTML){
+                img=document.createElement("img");
+                img.src = "img/"+g[i].children[3].innerHTML;
+                img.className="float_right";
+                gDescr.appendChild(img);
+            }
+            gDescr.innerHTML+=g[i].children[1].innerHTML;
             gPrice.innerHTML="Price: &pound;"+g[i].children[2].innerHTML+"<br><button value='Add to cart'>Add to cart</button>"
+            break;
         }
     }
 };
 
 var printGadgets=function(e){
     listText="<ul class='l1'>";
+
     console.log(e.tagName);
     for(i=0;i< e.children.length;i++){
         child= e.children[i];
         console.log(child.tagName);
 
+        t1=document.createTextNode(""+child.tagName);
+        //listText+="<li>"+document.getElementById("nav_gadgets").appendChild(t1)+"</li>";
         listText+="<li>"+child.tagName+"</li>";
         listText+="<ul class='l2'>";
 

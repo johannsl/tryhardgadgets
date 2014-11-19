@@ -6,7 +6,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.w3schools.com gadgets.xsd">
 
-    <hardware>
+    <Hardware>
         <category category="Armor">
             <gadget>
                 <title>Acevest</title>
@@ -23,11 +23,13 @@
                     of luck. Buy now, buy now, buy now, buy now, buy now, buy now!
                 </description>
                 <price>75000</price>
+                <image>temp_gadget.jpg</image>
             </gadget>
             <gadget>
                 <title>Derp2</title>
                 <description>Much wow2</description>
                 <price>75000.2</price>
+                <image></image>
             </gadget>
         </category>
         <category category="Dement">
@@ -35,16 +37,18 @@
                 <title>Yaya</title>
                 <description>Yayaya</description>
                 <price>3.50</price>
+                <image></image>
             </gadget>
         </category>
-    </hardware>
-    <software>
+    </Hardware>
+    <Software>
         <category category="Dementzzz">
             <gadget>
                 <title>Darp</title>
                 <description>No wow</description>
                 <price>1</price>
+                <image></image>
             </gadget>
         </category>
-    </software>
+    </Software>
 </gadgets>
