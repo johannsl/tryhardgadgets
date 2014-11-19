@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<gadgets
+        xmlns="http://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.w3schools.com gadgets.xsd">
+
+    <hardware>
+        <category category="her">
+            <gadget>
+                <name>Derp</name>
+                <description>Much wow</description>
+                <price>75000</price>
+            </gadget>
+            <gadget>
+                <name>Derp2</name>
+                <description>Much wow2</description>
+                <price>75000.2</price>
+            </gadget>
+        </category>
+        <category category="Dement">
+            <gadget>
+                <name>Yaya</name>
+                <description>Yayaya</description>
+                <price>3.50</price>
+            </gadget>
+        </category>
+    </hardware>
+    <software>
+        <category>
+            <gadget>
+                <name>Darp</name>
+                <description>No wow</description>
+                <price>1</price>
+            </gadget>
+        </category>
+    </software>
+</gadgets>
