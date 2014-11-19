@@ -69,22 +69,22 @@ nav#nav_bar a:visited{
     color: #989898;
 }
 
-nav#gadgets{
+nav#nav_gadgets{
     font-family: "Lucida Console", "courier new", courier, monospace;
 }
-nav#gadgets ul{
+nav#nav_gadgets ul{
     list-style-image: url('img/bullet.png');
 }
 
-nav#gadgets ul.l1{
+nav#nav_gadgets ul.l1{
     font-size: 13pt;
 }
 
-nav#gadgets ul.l2{
+nav#nav_gadgets ul.l2{
     font-size: 11pt;
 }
 
-nav#gadgets ul.l3{
+nav#nav_gadgets ul.l3{
     font-size: 9pt;
 }
 
