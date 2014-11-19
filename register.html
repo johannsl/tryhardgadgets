@@ -15,20 +15,31 @@
 
 <section id="container">
     <nav id="nav_bar">
-        <strong>Home</strong> | <a href="gadgets.html">Gadgets</a> | <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a> | <a href="gadgets.html">Gadgets</a> | <a href="contact.html">Contact</a>
         <div class="float_right" id="login_ref">
             <a href="login.html">Sign in</a> | <strong>Sign up</strong>
         </div>
     </nav>
 
     <section id="content">
-        <h3>Login to your account</h3>
+        <h3>Register your account</h3>
         <form id="register_form" action="register.js">
-            <label>Username: <input type="email" size="25"></label><br>
-            <label>Email: <input type="email" size="25"></label><br>
-            <label>Password:  <input type="password" size="25"></label><br>
-            <label>Confirm Password:  <input type="password" size="25"></label><br>
-            <input type="submit" value="Sign up">
+           <table>
+               <tr>
+                   <td align="right">Email: </td>
+                   <td align="left"><input type="email" name="email" /></td>
+               </tr>
+               <tr>
+                   <td align="right">Password: </td>
+                   <td align="left"><input type="password" name="password" /></td>
+               </tr> 
+               <tr>
+                   <td align="right">Confirm Password: </td>
+                   <td align="left"><input type="password" name="password" /></td>
+               </tr>
+                   <td align="right"><input type="submit" value="Sign up" /></td>
+               </tr>
+           </table> 
         </form>
 
     </section>
