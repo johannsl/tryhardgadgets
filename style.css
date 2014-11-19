@@ -144,6 +144,10 @@ div#gadget_shopper button{
     border-radius: 10px;
 }
 
+div#login_ref{
+    font-size: 9pt;
+}
+
 .float_right{
     float:right;
 }
@@ -168,8 +172,4 @@ footer{
     clear: both;
     text-align: center;
     margin-bottom: 50px;
-}
-
-a:link {
-        text-decoration: none;
 }
