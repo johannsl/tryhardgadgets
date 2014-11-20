@@ -42,6 +42,14 @@
         </category>
     </Hardware>
     <Software>
+        <category category="Image Editor">
+            <gadget>
+                <title>Jasc Paintshop Pro 9</title>
+                <description>Image Editor from 1982. Increased price due to vintage software.</description>
+                <price>400</price>
+                <image></image>
+            </gadget>
+        </category>
         <category category="Dementzzz">
             <gadget>
                 <title>Darp</title>

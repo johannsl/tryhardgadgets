@@ -29,20 +29,22 @@ var init=function(){
 };
 
 var fillGadget=function(gadget){
-    g=xmlDoc.getElementsByTagName("gadget");
+    var g=xmlDoc.getElementsByTagName("gadget");    //Root <gadgets> of XML
 
-    for(i=0;i< g.length;i++){
+    for(var i=0;i< g.length;i++){
         if(gadget==g[i].children[0].innerHTML){
             gTitle.innerHTML="<h3>"+g[i].children[0].innerHTML+"</h3>";
             gDescr.innerHTML="";
             if(g[i].children[3].innerHTML){
-                img=document.createElement("img");
+                var img=document.createElement("img");
                 img.src = "img/"+g[i].children[3].innerHTML;
                 img.className="float_right";
                 gDescr.appendChild(img);
             }
             gDescr.innerHTML+=g[i].children[1].innerHTML;
-            gPrice.innerHTML="Price: &pound;"+g[i].children[2].innerHTML+"<br><button value='Add to cart'>Add to cart</button>"
+            gPrice.innerHTML="Price: &pound;"+g[i].children[2].innerHTML;
+            if(isLoggedIn())    //load Add to cart-button if user is logged in
+                gPrice.innerHTML+="<br><button value='Add to cart'>Add to cart</button>"
             break;
         }
     }
@@ -53,21 +55,18 @@ var printGadgets=function(e){
     var gadgetList=[];
 
     for(var i=0;i< e.children.length;i++){
-        var child= e.children[i];
-
-        //var t1=document.createTextNode(""+child.tagName);
-        //listText+="<li>"+document.getElementById("nav_gadgets").appendChild(t1)+"</li>";
+        var child= e.children[i];   //<Hardware> / <Software>
         listText+="<li>"+child.tagName+"</li>";
         listText+="<ul class='l2'>";
 
         for(var j=0;j< child.children.length;j++){
-            var child2=child.children[j];
+            var child2=child.children[j];   //<category>
             var category = child2.attributes["category"].value;
             listText+="<li>"+category+"</li>";
             listText+="<ul class='l3'>";
 
             for(var k=0;k<child2.children.length;k++){
-                var child3=child2.children[k];
+                var child3=child2.children[k];  //<gadget>
                 var gTitle=child3.children[0].innerHTML; //Title of gadget
                 listText+="<li><output id='gadget_"+gTitle+"'></li>"; //Create an <output> where link is to be put
 

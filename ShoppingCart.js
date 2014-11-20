@@ -7,12 +7,29 @@ var div=null,
     content=null,
     summary=null;
 
+var getLocation=function(){
+    return window.location.href.split("/")[window.location.href.split("/").length-1];
+};
 
+var setCartAmount=function(amount){
+    document.getElementById("cart_amount").value=amount;
+};
 
 var init= function () {
     div=document.getElementById("shopping_cart");
-    createGui();
+    if(getLocation()=="gadgets.html"){
+        if(isLoggedIn())
+            createGui();
+        else{
+            removeShoppingCart();
+        }
+    }
+};
 
+var removeShoppingCart=function(){
+    document.getElementById("gadget_content").removeChild(
+        document.getElementById("shopping_cart")
+    );
 };
 
 var createGui= function () {

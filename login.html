@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Login - Tryhard Gadgets</title>
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="LoginCheck.js"></script>
 </head>
 
 <body>
@@ -35,7 +37,7 @@
             </span>
         </p>
         <h3>Log in to your account</h3>
-        <form id="login_form" action="login.js">
+        <form id="login_form" action="javascript:checkLogin()">
             <table>
                 <tr>
                     <td align="right">Email: </td>
@@ -45,7 +47,7 @@
                     <td align="right">Password: </td>
                     <td align="left"><input type="password" name="password" /></td>
                 </tr>
-                    <td align="right"><input type="submit" value="Login" /></td>
+                    <td align="right"><input type="submit" value="Login"/></td>
                 </tr>
             </table>
         </form>
