@@ -32,7 +32,7 @@ var fillGadget=function(gadget){
     g=xmlDoc.getElementsByTagName("gadget");
 
     for(i=0;i< g.length;i++){
-        if(gadget.innerHTML==g[i].children[0].innerHTML){
+        if(gadget==g[i].children[0].innerHTML){
             gTitle.innerHTML="<h3>"+g[i].children[0].innerHTML+"</h3>";
             gDescr.innerHTML="";
             if(g[i].children[3].innerHTML){
@@ -49,29 +49,29 @@ var fillGadget=function(gadget){
 };
 
 var printGadgets=function(e){
-    listText="<ul class='l1'>";
+    var listText="<ul class='l1'>";
+    var gadgetList=[];
 
-    console.log(e.tagName);
-    for(i=0;i< e.children.length;i++){
-        child= e.children[i];
-        console.log(child.tagName);
+    for(var i=0;i< e.children.length;i++){
+        var child= e.children[i];
 
-        t1=document.createTextNode(""+child.tagName);
+        //var t1=document.createTextNode(""+child.tagName);
         //listText+="<li>"+document.getElementById("nav_gadgets").appendChild(t1)+"</li>";
         listText+="<li>"+child.tagName+"</li>";
         listText+="<ul class='l2'>";
 
-        for(j=0;j< child.children.length;j++){
-            child2=child.children[j];
-            category = child2.attributes["category"].value;
-            console.log("\t"+category);
+        for(var j=0;j< child.children.length;j++){
+            var child2=child.children[j];
+            var category = child2.attributes["category"].value;
             listText+="<li>"+category+"</li>";
             listText+="<ul class='l3'>";
 
-            for(k=0;k<child2.children.length;k++){
-                child3=child2.children[k];
-                console.log("\t"+"\t"+child3.children[0].innerHTML);
-                listText+="<li><a onmouseover='' onclick='fillGadget(this)'>"+child3.children[0].innerHTML+"</a></li>";
+            for(var k=0;k<child2.children.length;k++){
+                var child3=child2.children[k];
+                var gTitle=child3.children[0].innerHTML; //Title of gadget
+                listText+="<li><output id='gadget_"+gTitle+"'></li>"; //Create an <output> where link is to be put
+
+                gadgetList.push(gTitle);
             }
 
             listText+="</ul>";
@@ -80,8 +80,20 @@ var printGadgets=function(e){
     }
     listText+="</ul>";
 
-    console.log(listText);
     document.getElementById("nav_gadgets").innerHTML=listText;
+
+    /*
+     * Fetches each gadget-<output>, and appends an <a>-tag inside it.
+     * This to include the <a>-tag in the HTML-DOM, to aid content tabbing and screen readers.
+     */
+    for(var i=0;i<gadgetList.length;i++){
+        var div_temp=document.getElementById("gadget_"+gadgetList[i]);
+
+        var a=document.createElement("a");
+        a.appendChild(document.createTextNode(gadgetList[i]));
+        a.href="javascript:fillGadget('"+gadgetList[i]+"')";
+        div_temp.appendChild(a);
+    }
 };
 
 addEventListener("load", init);
