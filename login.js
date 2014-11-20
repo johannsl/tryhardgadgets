@@ -45,22 +45,4 @@ var isLoggedIn=function(){
     return false;//cookie not set
 };
 
-var loadCookies=function(){
-    cookies=document.cookie.split(";");
-    taskCookie=null;
-    for(i=0;i<cookies.length;i++){
-        cookiePair=cookies[i].split("=");
-        if(cookiePair[0].trim()=="tasklist"){
-            taskCookie=cookiePair[1];
-            break;
-        }
-    }
-    if(taskCookie!=null){
-        tasks=JSON.parse(taskCookie);
-        for(i=0;i<tasks.length;i++){
-            addTaskGUI(tasks[i]);
-        }
-    }
-};
-
 console.log(document.referrer);

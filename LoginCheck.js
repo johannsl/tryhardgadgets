@@ -27,10 +27,17 @@ var init=function(){
         logoutRef.href="javascript:logout()";
         logoutRef.appendChild(document.createTextNode("Logout"));
 
-        nav_elements.appendChild(checkoutRef);
+        if(getLocation()=="checkout.html")
+            nav_elements.appendChild(document.createTextNode("Checkout"));
+        else
+            nav_elements.appendChild(checkoutRef);
         nav_elements.appendChild(document.createTextNode(" | "));
         nav_elements.appendChild(logoutRef);
     }
+};
+
+var getLocation=function(){
+    return window.location.href.split("/")[window.location.href.split("/").length-1];
 };
 
 var logout=function(){
