@@ -44,7 +44,7 @@ var fillGadget=function(gadget){
             gDescr.innerHTML+=g[i].children[1].innerHTML;
             gPrice.innerHTML="Price: &pound;"+g[i].children[2].innerHTML;
             if(isLoggedIn())    //load Add to cart-button if user is logged in
-                gPrice.innerHTML+="<br><button value='Add to cart' onclick='addToCartClicked()'>Add to cart</button>"
+                gPrice.innerHTML+="<br><button value='Add to cart' onclick='addToCartClicked()'>Add to cart</button>";
             break;
         }
     }

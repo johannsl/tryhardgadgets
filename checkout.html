@@ -3,9 +3,13 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Home - Tryhard Gadgets</title>
-    <script type="text/javascript" src="ShoppingCart.js"></script>
+    <title>Checkout - Tryhard Gadgets</title>
     <script type="text/javascript" src="LoginCheck.js"></script>
+    <script type="text/javascript" src="ShoppingCart.js"></script>
+    <script type="text/javascript" src="Checkout.js"></script>
+    <script src="alertify/lib/alertify.min.js"></script>
+    <link rel="stylesheet" href="alertify/themes/alertify.core.css">
+    <link rel="stylesheet" href="alertify/themes/alertify.default.css">
 </head>
 
 <body>
@@ -24,10 +28,16 @@
     </nav>
 
     <section id="content">
-        <h3>Welcome to Tryhard Gadgets!</h3>
-        We have so much stuff. You have no idea how much stuff we have. Just check it out. The stuff we have includes,
-        but are not limited to, whatever you can find at our <a href="gadgets.html">Gadgets</a> overview.
+        <h3>Checkout Shopping Cart</h3>
+        <div id="checkout_container">
+            <div id="checkout_content">
 
+            </div>
+            <div id="checkout_bottom" class="float_right" style="margin-bottom: 20px">
+                <b>Total cost: &pound;<output id="checkout_cost">0</output></b><br><br>
+                <button id="checkout_button" onclick="checkoutButtonClicked()">Checkout</button>
+            </div>
+        </div>
     </section>
 </section>
 

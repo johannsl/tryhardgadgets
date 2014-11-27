@@ -135,10 +135,13 @@ div#gadget_content img{
 div#gadget_shopper{
     width: 100%;
     margin-top: 35px;
-
 }
 
-div#gadget_shopper button{
+output#checkout_cost{
+    font-style: italic;
+}
+
+div#gadget_shopper button, div#checkout_bottom button{
     background-color: #ff952c;
     font-family: Trajan, helvetica, sans-serif;
     width: 100px;
@@ -146,12 +149,29 @@ div#gadget_shopper button{
     border-radius: 10px;
 }
 
+div#checkout_gadget{
+    width: 100%;
+    height: 28px;
+    padding-top: 9px;
+    border-bottom: dotted #525252 2pt;
+    margin-bottom: 20px;
+}
+
+div#checkout_gadget div#checkout_gadget_name{
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+div#checkout_gadget div#checkout_gadget_price{
+    float: right;
+    width: 150px;
+}
+
 div#login_ref{
     font-size: 9pt;
 }
 
 div#shopping_cart{
-
     float: right;
     width: 130px;
     height: 115px;
@@ -164,7 +184,7 @@ div#shopping_cart div#shopping_title{
     width: 125px;
     height: 19px;
     background-color: #ff952c;
-    font-family: Trajan;
+    font-family: Trajan, helvetica, sans-serif;
     font-size: 10pt;
     padding-top: 4px;
     margin-bottom: -8px;
