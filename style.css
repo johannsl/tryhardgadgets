@@ -33,6 +33,19 @@ span.top_caption{
     font-style: italic;
 }
 
+span.lang_language{
+    margin-left: 85%;
+    color: orange;
+}
+
+span.lang_language a:visited{
+    color: orange;
+}
+
+span.lang_language a:hover{
+    color: #2020FF;
+}
+
 body{
     width: 90%;
     position: relative;

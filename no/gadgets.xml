@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<gadgets
+        xmlns="http://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.w3schools.com gadgets.xsd">
+
+    <Hardware>
+        <category category="Armor">
+            <gadget>
+                <title>Acevest</title>
+                <description>
+                    Have you ever desired a BULLETPROOF vest that looks like a keyboard? Well, the brand new Nerdstopper Blacksuite
+                    Acevest might be just the thing for you! Made of uranium, mined from the deepest mines of Iran by underpaid
+                    savages and enriched by mad scientists, this piece of art will stop anything from the old Purple Nurple to nearly
+                    any modern atomic bombs! Worried about the war brewing in the west? Put on your vest, and worry no more!
+                    Coated by 573 layers of compressed carbon, smoothed out with the finest oil Italy can provide and hand-painted
+                    keyboard-esque symbols, not only will the vest make you look amazing, but also work as a modern-day female
+                    repellant - which will keep you out of harms way of even more drama! The vest is so good, every single developer
+                    of Tryhard Gadgets owns one, and highly recommend buyers from all over the globe to buy one! You know, because
+                    when atomic bombs starts falling, having a Nerstopper Blacsuite Acevest packed under your bed isn't the worst
+                    of luck. Buy now, buy now, buy now, buy now, buy now, buy now!
+                </description>
+                <price>75000</price>
+                <image>temp_gadget.jpg</image>
+            </gadget>
+            <gadget>
+                <title>Derp2</title>
+                <description>Much wow2</description>
+                <price>75000.2</price>
+                <image></image>
+            </gadget>
+        </category>
+        <category category="Dement">
+            <gadget>
+                <title>Yaya</title>
+                <description>Yayaya</description>
+                <price>3.50</price>
+                <image></image>
+            </gadget>
+        </category>
+    </Hardware>
+    <Software>
+        <category category="Image Editor">
+            <gadget>
+                <title>Jasc Paintshop Pro 9</title>
+                <description>Image Editor from 1982. Increased price due to vintage software.</description>
+                <price>400</price>
+                <image></image>
+            </gadget>
+        </category>
+        <category category="Dementzzz">
+            <gadget>
+                <title>Darp</title>
+                <description>No wow</description>
+                <price>1</price>
+                <image></image>
+            </gadget>
+        </category>
+    </Software>
+</gadgets>

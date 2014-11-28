@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <title>Logg inn - Tryhard Gadgets</title>
+    <script type="text/javascript" src="../scripts/login.js"></script>
+    <script type="text/javascript" src="../scripts/LoginCheck.js"></script>
+</head>
+</head>
+
+<body>
+<header id="top">
+    <span class="top_head">Tryhard Gadgets</span><br><br>
+    <span class="top_caption">- What we won't supply, you don't want.</span>
+</header>
+<header id="lang">
+    <span class="lang_language"><a href="../en/login.html">English</a> | <a href="">Norsk</a></span>
+    <hr>
+</header>
+
+<section id="container">
+    <nav id="nav_bar">
+        <a href="index.html">Hjem</a> | <a href="gadgets.html">Gadgets</a> | <a href="sitemap.html">Sitemap</a> | <a href="sources.html">Kilder</a> | <a href="contact.html">Kontakt oss</a>
+        <div class="float_right" id="login_ref">
+            <strong>Logg inn</strong> | <a href="register.html">Registrer deg</a>
+        </div>
+    </nav>
+
+    <section id="content">
+        <p style="float:right">
+            <!-- Please Note: This section contains inline CSS because it's not really a part of the site -->
+            <strong>Good day</strong>,<br>dear student assistant or teacher!<br>
+            Normally, each user would be<br>
+            stored in some kind of persistent<br>
+            database, but we've decided to<br>
+            hard-code a single existing user:<br>
+            <span style="font-family: 'courier new', courier, monospace">
+                <em>Username:</em> user@mail.com<br>
+                <em>Password:</em> password
+            </span>
+        </p>
+        <h3>Logg inn</h3>
+        <form id="login_form" action="javascript:checkLogin()">
+            <table>
+                <tr>
+                    <td align="right">E-post: </td>
+                    <td align="left"><input type="email" name="email" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Passord: </td>
+                    <td align="left"><input type="password" name="password" /></td>
+                </tr>
+                    <td align="right"><input type="submit" value="Logg inn"/></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+</section>
+
+<footer>
+    <hr>
+    <header>Team Tryhard</header>
+    <i>
+        Johan N. Slettevold (johannsl)<br>
+        Morten Grannes (mortgr)<br>
+        Jørn-Egil Jensen (jornegj)
+    </i>
+</footer>
+</body>
+</html>

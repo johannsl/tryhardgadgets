@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <title>Til kassen - Tryhard Gadgets</title>
+    <script type="text/javascript" src="../scripts/LoginCheck.js"></script>
+    <script type="text/javascript" src="../scripts/ShoppingCart.js"></script>
+    <script type="text/javascript" src="../scripts/Checkout.js"></script>
+    <script src="../alertify/lib/alertify.min.js"></script>
+    <link rel="stylesheet" href="../alertify/themes/alertify.core.css">
+    <link rel="stylesheet" href="../alertify/themes/alertify.default.css">
+</head>
+
+<body>
+<header id="top">
+    <span class="top_head">Tryhard Gadgets</span><br><br>
+    <span class="top_caption">- What we won't supply, you don't want.</span>
+    <hr>
+</header>
+<header id="lang">
+    <span class="lang_language"><a href="../en/checkout.html">English</a> | <a href="">Norsk</a></span>
+    <hr>
+</header>
+
+<section id="container">
+    <nav id="nav_bar">
+        <a href="index.html">Hjem</a> | <a href="gadgets.html">Gadgets</a> | <a href="sitemap.html">Sitemap</a> | <a href="sources.html">Kilder</a> | <a href="contact.html">Kontakt oss</a>
+        <div class="float_right" id="login_ref">
+            <a href="login.html">Logg inn</a> | <a href="register.html">Registrer deg</a>
+        </div>
+    </nav>
+
+    <section id="content">
+        <h3>Din handlevogn</h3>
+        <div id="checkout_container">
+            <div id="checkout_content">
+
+            </div>
+            <div id="checkout_bottom" class="float_right" style="margin-bottom: 20px">
+                <b>Totalt: NOK <output id="checkout_cost">0</output></b><br><br>
+                <button id="checkout_button" onclick="checkoutButtonClicked()">Til kassen</button>
+            </div>
+        </div>
+    </section>
+</section>
+
+<footer>
+    <hr>
+    <header>Team Tryhard</header>
+    <i>
+        Johan N. Slettevold (johannsl)<br>
+        Morten Grannes (mortgr)<br>
+        Jørn-Egil Jensen (jornegj)
+    </i>
+</footer>
+</body>
+</html>
