@@ -27,6 +27,10 @@ var checkoutInit = function(){
     priceOutput = document.getElementById("checkout_cost");
     checkoutButton = document.getElementById("checkout_cost");
 
+    if(cart.length==0){
+        alertify.error("Your shopping cart is empty");
+    }
+
     // Fill checkout
     for(var i=0;i<cart.length;i++){
         addGadgetGui(cart[i]);
