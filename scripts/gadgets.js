@@ -37,7 +37,7 @@ var fillGadget=function(gadget){
             gDescr.innerHTML="";
             if(g[i].children[3].innerHTML){
                 var img=document.createElement("img");
-                img.src = "img/"+g[i].children[3].innerHTML;
+                img.src = "../img/"+g[i].children[3].innerHTML;
                 img.className="float_right";
                 gDescr.appendChild(img);
             }

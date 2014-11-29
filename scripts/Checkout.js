@@ -10,6 +10,8 @@ var contentDiv=null,        // Put gadget-divs in here
     gadgets=null,           // List of gadgets, from XML
     totalPrice=0;           // Total price for all gadgets
 
+var language = window.location.href.split("/")[window.location.href.split("/").length-2];   // Language for the HTML
+
 var checkoutInit = function(){
     var xmlhttp;
     if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -28,7 +30,12 @@ var checkoutInit = function(){
     checkoutButton = document.getElementById("checkout_cost");
 
     if(cart.length==0){
-        alertify.error("Your shopping cart is empty");
+        switch(language){
+            case "en":
+                alertify.error("Your shopping cart is empty");break;
+            case "no":
+                alertify.error("Handlevognen din er tom");break;
+        }
     }
 
     // Fill checkout

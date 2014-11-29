@@ -2,6 +2,9 @@
  * Created by dendril on 11/17/14.
  */
 
+
+var language = window.location.href.split("/")[window.location.href.split("/").length-2];   // Language for the HTML
+
 var checkLogin=function(){
     var username=document.getElementById("login_form")["email"].value;
     var password=document.getElementById("login_form")["password"].value;
@@ -15,13 +18,24 @@ var checkLogin=function(){
         if(!document.getElementById("error_message")){
             var textNode=document.createElement("span");
             textNode.setAttribute("id","error_message");
-            textNode.appendChild(document.createTextNode("You appear to have submitted an invalid username/pass combination. Please try again."));
+            switch(language){
+                case "en":
+                    textNode.appendChild(document.createTextNode("You appear to have submitted an invalid username/pass combination. Please try again."));break;
+                case "no":
+                    textNode.appendChild(document.createTextNode("Du har oppgitt en ugyldig brukernavn/passord-kombinasjon. Vennligst prøv igjen."));break;
+            }
+
             document.getElementById("content").insertBefore(
                 textNode,
                 document.getElementById("login_form")
             );
         }
-        console.log("Failed. User still guest.")
+        switch(language){
+            case "en":
+                alertify.error("Failed. User still guest.");break;
+            case "no":
+                alertify.error("Mislyktes. Bruker enda gjest.");break;
+        }
     }
 };
 
