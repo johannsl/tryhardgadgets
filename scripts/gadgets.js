@@ -7,6 +7,8 @@ var xmlDoc=null,
     gDescr=null,
     gPrice=null;
 
+var language = window.location.href.split("/")[window.location.href.split("/").length-2];   // Language for HTML
+
 var init=function(){
     gTitle=document.getElementById("gadgets_title");
     gDescr=document.getElementById("gadget_description");
@@ -41,10 +43,23 @@ var fillGadget=function(gadget){
                 img.className="float_right";
                 gDescr.appendChild(img);
             }
-            gDescr.innerHTML+=g[i].children[1].innerHTML;
-            gPrice.innerHTML="Price: &pound;"+g[i].children[2].innerHTML;
+            gDescr.innerHTML+=g[i].children[1].innerHTML;switch(language){
+                case "en":
+                    gPrice.innerHTML="Price: &pound;"+g[i].children[2].innerHTML;
+                    break;
+                case "no":
+                    gPrice.innerHTML="Pris: "+g[i].children[2].innerHTML+" NOK";
+                    break;
+            }
             if(isLoggedIn())    //load Add to cart-button if user is logged in
-                gPrice.innerHTML+="<br><button value='Add to cart' onclick='addToCartClicked()'>Add to cart</button>";
+                switch(language){
+                    case "en":
+                        gPrice.innerHTML+="<br><button value='Add to cart' onclick='addToCartClicked()'>Add to cart</button>";
+                        break;
+                    case "no":
+                        gPrice.innerHTML+="<br><button value='Add to cart' onclick='addToCartClicked()'>Legg til Handlevogn</button>";
+                        break;
+                }
             break;
         }
     }

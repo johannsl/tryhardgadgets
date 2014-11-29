@@ -6,7 +6,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.w3schools.com gadgets.xsd">
 
-    <Hardware>
+    <Utstyr>
         <category category="Beskyttelse">
             <gadget>
                 <title>Acevest</title>
@@ -37,13 +37,13 @@
                 <image></image>
             </gadget>
         </category>
-    </Hardware>
-    <Software>
-        <category category="Image Editor">
+    </Utstyr>
+    <Programvare>
+        <category category="Bilderedigering">
             <gadget>
                 <title>Jasc Paintshop Pro 9</title>
-                <description>Image Editor from 1982. Increased price due to vintage software.</description>
-                <price>400</price>
+                <description>Bilderedigeringsprogram fra 1982. Økt pris grunnet retrovare.</description>
+                <price>3400</price>
                 <image></image>
             </gadget>
         </category>
@@ -55,5 +55,5 @@
                 <image></image>
             </gadget>
         </category>
-    </Software>
+    </Programvare>
 </gadgets>

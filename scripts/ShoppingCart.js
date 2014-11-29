@@ -9,6 +9,8 @@ var div=null,
     outputField,
     cart=[];
 
+var language = window.location.href.split("/")[window.location.href.split("/").length-2];   // Language for HTML
+
 var getLocation=function(){
     return window.location.href.split("/")[window.location.href.split("/").length-1];
 };
@@ -75,18 +77,48 @@ var createGui= function () {
     summary=document.createElement("div");
 
     titleBar.setAttribute("id", "shopping_title");
-    titleBar.appendChild(document.createTextNode("Shopping Cart"));
+    switch(language){
+        case "en":
+            titleBar.appendChild(document.createTextNode("Shopping Cart"));
+            break;
+        case "no":
+            titleBar.appendChild(document.createTextNode("Handlevogn"));
+            break;
+    }
 
     outputField=document.createElement("output");
     outputField.setAttribute("id", "cart_amount");
     outputField.value=cart.length;
     content.setAttribute("id", "shopping_content");
-    content.appendChild(document.createTextNode("There's currently "));
+    switch(language){
+        case "en":
+            content.appendChild(document.createTextNode("There's currently "));
+            break;
+        case "no":
+            content.appendChild(document.createTextNode("Du har "));
+            break;
+    }
+
     content.appendChild(outputField);
-    content.appendChild(document.createTextNode(" gadgets in your cart."));
+
+    switch(language){
+        case "en":
+            content.appendChild(document.createTextNode(" gadgets in your cart."));
+            break;
+        case "no":
+            content.appendChild(document.createTextNode(" varer i handlevognen."));
+            break;
+    }
 
     var b=document.createElement("button");
-    b.appendChild(document.createTextNode("Checkout"));
+    switch(language){
+        case "en":
+            b.appendChild(document.createTextNode("Checkout"));
+            break;
+        case "no":
+            b.appendChild(document.createTextNode("Til Betaling"));
+            break;
+    }
     var a=document.createElement("a");
     a.href="checkout.html";
     a.appendChild(b);

@@ -10,7 +10,7 @@ var contentDiv=null,        // Put gadget-divs in here
     gadgets=null,           // List of gadgets, from XML
     totalPrice=0;           // Total price for all gadgets
 
-var language = window.location.href.split("/")[window.location.href.split("/").length-2];   // Language for the HTML
+var language = window.location.href.split("/")[window.location.href.split("/").length-2];   // Language for HTML
 
 var checkoutInit = function(){
     var xmlhttp;
@@ -73,15 +73,36 @@ var addGadgetGui = function(name){
 };
 
 var checkoutButtonClicked = function(extraMessage){
-    var message="Thank you for shopping at Tryhard Gadgets!<br><br>"
-        + "Your IP has been registered, and you will be<br>"
-        + "charged with £"+totalPrice+" directly from your bank<br>account in the next few seconds.";
+    var message="";
+    switch(language){
+        case "en":
+            message+="Thank you for shopping at Tryhard Gadgets!<br><br>"
+                + "Your IP has been registered, and you will be<br>"
+                + "charged with £"+totalPrice+" directly from your bank<br>account in the next few seconds.";
+            break;
+        case "no":
+            message+="Takk for at du handlet hos Tryhard Gadgets!<br><br>"
+                + "Din IP har blitt registrert, og vi vil<br>"
+                + "trekke "+totalPrice+" NOK fra din bankkonto i<br>løpet av de neste sekundene.";
+            break;
+
+    }
+
     if(extraMessage)
         message="<b>"+extraMessage+"</b><br><br><br>"+message;
-    alertify.set({ labels: {
-        ok     : "Thank you, Tryhard Gadgets!",
-        cancel : "Cancel transaction"
-    } });
+    switch (language){
+        case "en":
+            alertify.set({ labels: {
+                ok     : "Thank you, Tryhard Gadgets!",
+                cancel : "Cancel transaction"
+            } });break;
+        case "no":
+            alertify.set({ labels: {
+                ok     : "Takk, Tryhard Gadgets!",
+                cancel : "Avbryt transaksjon"
+            } });break;
+    }
+
     alertify.confirm(message, function (e) {
         if (e) {
             document.cookie = "cart=;expires=Thu, 01 Jan 1970 00:00:01 GMT;"; // Delete 'cart'-cookie
@@ -92,7 +113,13 @@ var checkoutButtonClicked = function(extraMessage){
                 checkoutButtonClicked(extraMessage);
             }
             else
-                checkoutButtonClicked("I'm sorry. I can't let you do that.");
+                switch(language){
+                    case "en":
+                        checkoutButtonClicked("I'm sorry.<br>I can't let you do that.");break;
+                    case "no":
+                        checkoutButtonClicked("Jeg beklager.<br>Vi kan ikke tillate at du avbryter.");break;
+                }
+
         }
     });
 };
