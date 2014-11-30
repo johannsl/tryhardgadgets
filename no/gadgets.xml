@@ -6,7 +6,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.w3schools.com gadgets.xsd">
 
-    <Maskinvare>
+    <Utstyr>
         <category category="Utstyr">
             <gadget>
                 <title>Acevest</title>
