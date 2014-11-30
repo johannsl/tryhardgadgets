@@ -250,3 +250,14 @@ footer{
     text-align: center;
     margin-bottom: 50px;
 }
+
+img#storyboard{
+    width: 80%;
+    border: inset thick black;
+    border-radius: 15px;
+    padding: 10px;
+}
+.caption{
+    margin-left: 28px;
+    font-style: italic;
+}
