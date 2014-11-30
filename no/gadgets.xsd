@@ -8,7 +8,7 @@
         <xs:complexType>
             <xs:sequence>
 
-                <xs:element name="Utstyr">
+                <xs:element name="Maskinvare">
                     <xs:complexType>
                         <xs:sequence maxOccurs="unbounded">
                             <xs:element name="category" type="xs:element">
