@@ -111,6 +111,7 @@ var createGui= function () {
     }
 
     var b=document.createElement("button");
+    b.role="button";
     switch(language){
         case "en":
             b.appendChild(document.createTextNode("Checkout"));

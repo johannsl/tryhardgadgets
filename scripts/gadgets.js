@@ -1,7 +1,7 @@
 /**
  * Created by dendril on 11/19/14.
  */
-
+ 
 var xmlDoc=null,
     gTitle=null,
     gDescr=null,
@@ -40,6 +40,7 @@ var fillGadget=function(gadget){
             if(g[i].children[3].innerHTML){
                 var img=document.createElement("img");
                 img.src = "../img/"+g[i].children[3].innerHTML;
+                img.alt = g[i].children[0].innerHTML+" Image";
                 img.className="float_right";
                 gDescr.appendChild(img);
             }
@@ -54,10 +55,10 @@ var fillGadget=function(gadget){
             if(isLoggedIn())    //load Add to cart-button if user is logged in
                 switch(language){
                     case "en":
-                        gPrice.innerHTML+="<br><button value='Add to cart' onclick='addToCartClicked()'>Add to cart</button>";
+                        gPrice.innerHTML+="<br><button role='button' value='Add to cart' onclick='addToCartClicked()'>Add to cart</button>";
                         break;
                     case "no":
-                        gPrice.innerHTML+="<br><button value='Add to cart' onclick='addToCartClicked()'>Legg til Handlevogn</button>";
+                        gPrice.innerHTML+="<br><button role='button' value='Add to cart' onclick='addToCartClicked()'>Legg til Handlevogn</button>";
                         break;
                 }
             break;
@@ -66,19 +67,19 @@ var fillGadget=function(gadget){
 };
 
 var printGadgets=function(e){
-    var listText="<ul class='l1'>";
+    var listText="<ul class='l1' role='list'>";
     var gadgetList=[];
 
     for(var i=0;i< e.children.length;i++){
         var child= e.children[i];   //<Hardware> / <Software>
         listText+="<li>"+child.tagName+"</li>";
-        listText+="<ul class='l2'>";
+        listText+="<ul class='l2' role='list'>";
 
         for(var j=0;j< child.children.length;j++){
             var child2=child.children[j];   //<category>
             var category = child2.attributes["category"].value;
             listText+="<li>"+category+"</li>";
-            listText+="<ul class='l3'>";
+            listText+="<ul class='l3' role='list'>";
 
             for(var k=0;k<child2.children.length;k++){
                 var child3=child2.children[k];  //<gadget>

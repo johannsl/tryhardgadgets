@@ -23,15 +23,15 @@
     <hr>
 </header>
 
-<section id="container">
-    <nav id="nav_bar">
+<section id="container" role="region">
+    <nav id="nav_bar" role="navigation">
         <a href="index.html">Home</a> | <a href="gadgets.html">Gadgets</a> | <a href="sitemap.html">Sitemap</a> | <a href="sources.html">Sources</a> | <a href="contact.html">Contact</a>
         <div class="float_right" id="login_ref">
             <a href="login.html">Login</a> | <a href="register.html">Register</a>
         </div>
     </nav>
 
-    <section id="content">
+    <section id="content" role="region">
         <h3>Checkout Shopping Cart</h3>
         <div id="checkout_container">
             <div id="checkout_content">
@@ -39,7 +39,7 @@
             </div>
             <div id="checkout_bottom" class="float_right" style="margin-bottom: 20px">
                 <b>Total cost: &pound;<output id="checkout_cost">0</output></b><br><br>
-                <button id="checkout_button" onclick="checkoutButtonClicked()">Checkout</button>
+                <button id="checkout_button" role="button" onclick="checkoutButtonClicked()">Checkout</button>
             </div>
         </div>
     </section>

@@ -19,8 +19,8 @@
     <hr>
 </header>
 
-<section id="container">
-    <nav id="nav_bar">
+<section id="container" role="region">
+    <nav id="nav_bar" role="navigation">
         <a href="index.html">Hjem</a> | <strong>Gadgets</strong> | <a href="sitemap.html">Sitemap</a> | <a href="sources.html">Kilder</a> | <a href="contact.html">Kontakt oss</a>
         <div class="float_right" id="login_ref">
             <a href="login.html">Logg inn</a>  | <a href="register.html">Registrer deg</a>
@@ -36,12 +36,12 @@
         <div id="gadget_separator"> </div>
 
         <div id="gadget_content">
-            <output id="gadgets_title"></output>
-            <output id="gadget_description">Gadgetene finner du til venstre!</output>
+            <output id="gadgets_title" role="status" aria-live="off"></output>
+            <output id="gadget_description" role="status" aria-live="off">Gadgetene finner du til venstre!</output>
             <hr>
             <div id="shopping_cart"></div>
             <div id="gadget_shopper">
-                <output id="gadget_priceShopper"></output>
+                <output id="gadget_priceShopper" role="status" aria-live="off"></output>
             </div>
         </div>
     </div>

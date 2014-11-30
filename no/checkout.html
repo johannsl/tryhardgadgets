@@ -23,15 +23,15 @@
     <hr>
 </header>
 
-<section id="container">
-    <nav id="nav_bar">
+<section id="container" role="region">
+    <nav id="nav_bar" role="navigation">
         <a href="index.html">Hjem</a> | <a href="gadgets.html">Gadgets</a> | <a href="sitemap.html">Sitemap</a> | <a href="sources.html">Kilder</a> | <a href="contact.html">Kontakt oss</a>
         <div class="float_right" id="login_ref">
             <a href="login.html">Logg inn</a> | <a href="register.html">Registrer deg</a>
         </div>
     </nav>
 
-    <section id="content">
+    <section id="content" role="region">
         <h3>Din handlevogn</h3>
         <div id="checkout_container">
             <div id="checkout_content">
@@ -39,7 +39,7 @@
             </div>
             <div id="checkout_bottom" class="float_right" style="margin-bottom: 20px">
                 <b>Totalt: NOK <output id="checkout_cost">0</output></b><br><br>
-                <button id="checkout_button" onclick="checkoutButtonClicked()">Til kassen</button>
+                <button id="checkout_button" role="button" onclick="checkoutButtonClicked()">Til kassen</button>
             </div>
         </div>
     </section>

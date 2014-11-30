@@ -21,15 +21,15 @@
     <hr>
 </header>
 
-<section id="container">
-    <nav id="nav_bar">
+<section id="container" role="region">
+    <nav id="nav_bar" role="navigation">
         <a href="index.html">Home</a> | <a href="gadgets.html">Gadgets</a> | <a href="sitemap.html">Sitemap</a> | <a href="sources.html">Sources</a> | <a href="contact.html">Contact</a>
         <div class="float_right" id="login_ref">
             <strong>Login</strong> | <a href="register.html">Register</a>
         </div>
     </nav>
 
-    <section id="content">
+    <section id="content" role="region">
         <p style="float:right">
             <!-- Please Note: This section contains inline CSS because it's not really a part of the site -->
             <strong>Good day</strong>,<br>dear student assistant or teacher!<br>
@@ -43,17 +43,17 @@
             </span>
         </p>
         <h3>Log in to your account</h3>
-        <form id="login_form" action="javascript:checkLogin()">
+        <form id="login_form" role="form" action="javascript:checkLogin()">
             <table>
                 <tr>
                     <td align="right">Email: </td>
-                    <td align="left"><input type="email" name="email" /></td>
+                    <td align="left"><input type="email" name="email" role="textbox" /></td>
                 </tr>
                 <tr>
                     <td align="right">Password: </td>
-                    <td align="left"><input type="password" name="password" /></td>
+                    <td align="left"><input type="password" name="password" role="textbox" /></td>
                 </tr>
-                    <td align="right"><input type="submit" value="Login"/></td>
+                    <td align="right"><input type="submit" value="Login" role="button"/></td>
                 </tr>
             </table>
         </form>

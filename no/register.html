@@ -16,15 +16,15 @@
     <hr>
 </header>
 
-<section id="container">
-    <nav id="nav_bar">
+<section id="container" role="region">
+    <nav id="nav_bar" role="navigation">
         <a href="index.html">Hjem</a> | <a href="gadgets.html">Gadgets</a> | <a href="sitemap.html">Sitemap</a> | <a href="sources.html">Kilder</a> | <a href="contact.html">Kontakt oss</a>
         <div class="float_right" id="login_ref">
             <a href="login.html">Logg inn</a>  | <strong>Registrer deg</strong>
         </div>
     </nav>
 
-    <section id="content">
+    <section id="content" role="region">
         <h3>Registrer deg</h3>
         <p style="float:right">
             <!-- Please Note: This section contains inline CSS because it's not really a part of the site -->
@@ -36,17 +36,17 @@
            <table>
                <tr>
                    <td align="right">E-post: </td>
-                   <td align="left"><input type="email" name="email" /></td>
+                   <td align="left"><input type="email" name="email" role="textbox" /></td>
                </tr>
                <tr>
                    <td align="right">Passord: </td>
-                   <td align="left"><input type="password" name="password" /></td>
+                   <td align="left"><input type="password" name="password" role="textbox" /></td>
                </tr> 
                <tr>
                    <td align="right">Bekreft passord: </td>
-                   <td align="left"><input type="password" name="password" /></td>
+                   <td align="left"><input type="password" name="password" role="textbox" /></td>
                </tr>
-                   <td align="right"><input type="submit" value="Registrer deg" /></td>
+                   <td align="right"><input type="submit" value="Registrer deg" role="button" /></td>
                </tr>
            </table> 
         </form>
