@@ -27,3 +27,7 @@ Accessibility:
 - Two languages; Norwegian, English
 - ARIA support
 - Tested for Content Tabbing and Screen Reader
+
+
+External Libraries:
+- Alertify: Views alerts and popups beautifully
