@@ -6,8 +6,8 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.w3schools.com gadgets.xsd">
 
-    <Utstyr>
-        <category category="Beskyttelse">
+    <Maskinvare>
+        <category category="Utstyr">
             <gadget>
                 <title>Acevest</title>
                 <description>
@@ -19,21 +19,36 @@
                     å tilby, og håndmalt med tastaturlignende symboler vil vesten se utrolig bra ut på deg! Kjøp nå,
                     kjøp nå, kjøp nå, kjøp nå, kjøp nå, kjøp nå, kjøp nå!
                 </description>
-                <price>120000</price>
+                <price>75000</price>
                 <image>temp_gadget.jpg</image>
             </gadget>
             <gadget>
-                <title>Derp2</title>
-                <description>Much wow2</description>
-                <price>75000.2</price>
-                <image></image>
+                <title>Acevest v2</title>
+                <description> 
+                    Har du noensinne ønsket deg en forbedret SKUDDSIKKER vest som ser ut som et tastatur? Da eer den splitter nye
+                    Nerdstopper Blacksuite Acevest v2 tingen for deg! Laget av uran hentet fra de dypeste minene i Iran av
+                    underbetalte villmenn, og anriket av gale vitenskapsmenn, vil dette kunstverket holde deg trygg for
+                    alt fra en rolig snøballkrig til hvilken som helst moderne atombombe! Kast alle bekymringer om krig
+                    fra østlige kanter! Dekt med 573 lag av komprimert carbon, polert med den fineste oljen Italia har
+                    å tilby, og håndmalt med tastaturlignende symboler vil vesten se utrolig bra ut på deg! Kjøp nå,
+                    kjøp nå, kjøp nå, kjøp nå, kjøp nå, kjøp nå, kjøp nå!
+                </description>
+                <price>80000</price>
+                <image>temp_gadget.jpg</image>
             </gadget>
         </category>
-        <category category="Dement">
+        <category category="Datamaskinger">
             <gadget>
-                <title>Yaya</title>
-                <description>Yayaya</description>
-                <price>3.50</price>
+                <title>"TG"-en</title>
+                <description>
+                    "Tryhard Gadgets" datamaskinen er en moderne must have!
+                    En datamaskin er en samling av mekaniske og elektroniske komponenter som ved hjelp av dataprogrammer kan utføre arbeidsoppgaver på en effektiv måte. Fra begynnelsen var datamaskinen i hovedsak et hjelpemiddel for å utføre aritmetiske og matematiske beregninger, men i dag er den en del av vår livsstil og finnes i de fleste miljøer, for eksempel som PC-er, i mobiltelefoner, biler og minibanker, og i næringslivet.
+
+                    En datamaskin virker ved at den henter fram én og én instruksjon fra et lager, utfører instruksjonen og lagrer resultatet et sted. Disse instruksjonene er svært enkle, og det kreves ofte store mengder instruksjoner for å utføre komplekse operasjoner. Samlingen med instruksjoner kalles et program. Instruksjonene et menneske skriver når det programmerer en datamaskin kalles kildekode. Kildekode er leselig for mennesker, men må oversettes for å bli instruksjoner til datamaskinen. Denne prosessen kalles enten kompilering eller tolking, avhengig av om det gjøres på forhånd eller mens programmet kjører.
+
+                    Det engelske ordet for datamaskin, computer, ble frem til oppfinnelsen av datamaskinen brukt om personer, vanligvis kvinner, som foretok matematiske utregninger, enten med kalkulator eller penn og papir, og som ble erstattet av datamaskinen da den gjorde sitt inntog.
+                </description>
+                <price>35000</price>
                 <image></image>
             </gadget>
         </category>
@@ -41,17 +56,28 @@
     <Programvare>
         <category category="Bilderedigering">
             <gadget>
-                <title>Jasc Paintshop Pro 9</title>
-                <description>Bilderedigeringsprogram fra 1982. Økt pris grunnet retrovare.</description>
-                <price>3400</price>
+                <title>Jasc Paint</title>
+                <description>
+                    Bilderedigeringsprogram fra 1982. Økt pris grunnet retrovare.
+                    Fotomanipulasjon er å forandre et originalfoto slik at det får et nytt innhold og betydning, men ofte ikke mer enn at man kan gjenkjenne en del av utgangsbildet. Fotomanipulasjon kan i tillegg bety å sette sammen flere fotografier til en ny komposisjon, selv om slike bilder i kunsten vanligvis kalles fotomontasje eller kollasje. Også retusjering av fotografier og fotomontasjer er fotomanipulasjon selv om teknikkene ikke vanligvis kalles det.
+
+                </description>
+                <price>1000</price>
                 <image></image>
             </gadget>
         </category>
-        <category category="Dementzzz">
+        <category category="Operativ systemer">
             <gadget>
-                <title>Darp</title>
-                <description>No wow</description>
-                <price>1</price>
+                <title>PC GO</title>
+                <description>
+                    PC GO vil få datamaskinen din til å fungere i lynende hastighet!
+                    Et operativsystem (OS) er den grunnleggende programvaren på en datamaskin, og det som tildeler de forskjellige ressursene i datamaskinen til andre programmer. Én type ressurs er eksterne enheter, som en skriver. Operativsystemet passer for eksempel på at to programmer ikke samtidig sender informasjon til samme skriver, men at de legges i en venteliste før utskrivning. En annen type ressurs er interne enheter som minne og prosessorer. Dette er svært grunnleggende komponenter som operativsystemet også holder styr på.
+
+                    Man kan betrakte programvare som å være én av to typer: applikasjonsprogramvare eller systemprogramvare. Applikasjonsprogramvare er slikt som tekstbehandlere, regneark og andre programmer som brukeren har direkte kontakt med. Av systemprogramvare er operativsystemet den viktigste. Det holder styr på systemressursene og gjør programmererens jobb enklere. Tilleggsenheter som er koblet til datamaskinen er ofte kompliserte å bruke. En harddisk, for eksempel, trenger detaljerte instruksjoner om å starte motoren sin, stoppe den, flytte på lesehodene og mye annet. Operativsystemet bruker harddisken ved å kommunisere på en standard måte med et driverprogram laget spesielt for enheten. Et annet program som ønsker å skrive noe til harddisken gir bare beskjed til operativsystemet om for eksempel «å skrive teksten 'kongle' til filen "kongle.txt" på katalogen c:\». Operativsystemet, i samarbeid med driverprogrammet, tar seg så av resten av oppgaven.
+
+                    Operativsystemet er et program som alle andre i datamaskinen. Det er skrevet i et programmeringsspråk og følger vanlige regler for programmer. Forskjellen er at det er det første som lastes inn i minnet når maskinen startes, og det styrer «hverdagen» for alle programmer som lastes inn senere.
+                </description>
+                <price>1000</price>
                 <image></image>
             </gadget>
         </category>

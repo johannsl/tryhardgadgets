@@ -7,7 +7,7 @@
         xsi:schemaLocation="http://www.w3schools.com gadgets.xsd">
 
     <Hardware>
-        <category category="Armor">
+        <category category="Gear">
             <gadget>
                 <title>Acevest</title>
                 <description>
@@ -26,35 +26,68 @@
                 <image>temp_gadget.jpg</image>
             </gadget>
             <gadget>
-                <title>Derp2</title>
-                <description>Much wow2</description>
-                <price>75000.2</price>
-                <image></image>
+                <title>Acevest v2</title>
+                <description>
+                    Have you ever desired a second version BULLETPROOF vest that looks like a keyboard? Well, the brand new Nerdstopper Blacksuite
+                    Acevest v2 might be just the thing for you! Made of uranium, mined from the deepest mines of Iran by underpaid
+                    savages and enriched by mad scientists, this piece of art will stop anything from the old Purple Nurple to nearly
+                    any modern atomic bombs! Worried about the war brewing in the west? Put on your vest, and worry no more!
+                    Coated by 573 layers of compressed carbon, smoothed out with the finest oil Italy can provide and hand-painted
+                    keyboard-esque symbols, not only will the vest make you look amazing, but also work as a modern-day female
+                    repellant - which will keep you out of harms way of even more drama! The vest is so good, every single developer
+                    of Tryhard Gadgets owns one, and highly recommend buyers from all over the globe to buy one! You know, because
+                    when atomic bombs starts falling, having a Nerstopper Blacsuite Acevest packed under your bed isn't the worst
+                    of luck. Buy now, buy now, buy now, buy now, buy now, buy now!
+                </description>
+                <price>80000</price>
+                <image>temp_gadget.jpg</image>
             </gadget>
         </category>
-        <category category="Dement">
+        <category category="Computers">
             <gadget>
-                <title>Yaya</title>
-                <description>Yayaya</description>
-                <price>3.50</price>
+                <title>The "TG"</title>
+                <description>
+                    The "Tryhard-Gadgets" Computer is a modern day must have! A computer is a general purpose device that can be programmed to carry out a set of arithmetic or logical operations automatically. Since a sequence of operations can be readily changed, the computer can solve more than one kind of problem.
+
+                    Conventionally, a computer consists of at least one processing element, typically a central processing unit (CPU), and some form of memory. The processing element carries out arithmetic and logic operations, and a sequencing and control unit can change the order of operations in response to stored information. Peripheral devices allow information to be retrieved from an external source, and the result of operations saved and retrieved.
+
+                    In World War II, mechanical analog computers were used for specialized military applications. During this time the first electronic digital computers were developed. Originally they were the size of a large room, consuming as much power as several hundred modern personal computers (PCs).[1]
+
+                    Modern computers based on integrated circuits are millions to billions of times more capable than the early machines, and occupy a fraction of the space.[2] Simple computers are small enough to fit into mobile devices, and mobile computers can be powered by small batteries. Personal computers in their various forms are icons of the Information Age and are what most people think of as “computers.” However, the embedded computers found in many devices from MP3 players to fighter aircraft and from toys to industrial robots are the most numerous.
+                 LOL, BUY NOW!
+                </description>
+                <price>35000</price>
                 <image></image>
             </gadget>
         </category>
     </Hardware>
     <Software>
-        <category category="Image Editor">
+        <category category="Image Editors">
             <gadget>
-                <title>Jasc Paintshop Pro 9</title>
-                <description>Image Editor from 1982. Increased price due to vintage software.</description>
-                <price>400</price>
+                <title>Jasc Paint</title>
+                <description>
+                    Image Editor from 1982. Increased price due to vintage software.
+                    Image editing encompasses the processes of altering images, whether they are digital photographs, traditional photochemical photographs, or illustrations. Traditional analog image editing is known as photo retouching, using tools such as an airbrush to modify photographs, or editing illustrations with any traditional art medium. Graphic software programs, which can be broadly grouped into vector graphics editors, raster graphics editors, and 3D modelers, are the primary tools with which a user may manipulate, enhance, and transform images. Many image editing programs are also used to render or create computer art from scratch.
+                
+                </description>
+                <price>1000</price>
                 <image></image>
             </gadget>
         </category>
-        <category category="Dementzzz">
+        <category category="Operating Systems">
             <gadget>
-                <title>Darp</title>
-                <description>No wow</description>
-                <price>1</price>
+                <title>PC GO</title>
+                <description>
+                    PC GO will make your computer work with incredible speeds!
+                    An operating system (OS) is software that manages computer hardware and software resources and provides common services for computer programs. The operating system is an essential component of the system software in a computer system. Application programs usually require an operating system to function.
+
+                    Time-sharing operating systems schedule tasks for efficient use of the system and may also include accounting software for cost allocation of processor time, mass storage, printing, and other resources.
+
+                    For hardware functions such as input and output and memory allocation, the operating system acts as an intermediary between programs and the computer hardware,[1][2] although the application code is usually executed directly by the hardware and will frequently make a system call to an OS function or be interrupted by it. Operating systems can be found on almost any device that contains a computer—from cellular phones and video game consoles to supercomputers and web servers.
+
+                    Examples of popular modern operating systems include Android, BSD, iOS, Linux, OS X, QNX, Microsoft Windows,[3] Windows Phone, and IBM z/OS. All these examples, except Windows, Windows Phone and z/OS, share roots in UNIX.
+                </description>
+                <price>1000</price>
                 <image></image>
             </gadget>
         </category>
